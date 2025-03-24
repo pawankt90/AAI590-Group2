@@ -3,3 +3,6 @@ Sandbox/ACGAN_128_synthetic_normal/
 Sandbox/ACGAN_128_synthetic_pneumonia/
 Sandbox/Default_128/
 .ipynb_checkpoints/
+data/
+Sandbox/ACGAN_128/
+Sandbox/StyleGAN_128/
