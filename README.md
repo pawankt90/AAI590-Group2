@@ -8,7 +8,7 @@
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
 This project explores the use of **Convolutional Neural Networks (CNNs)** and **Generative Adversarial Networks (GANs)** to improve the diagnostic accuracy of pneumonia detection from chest X-ray images. Motivated by the limited availability and imbalance of real-world medical data, we leverage synthetic image generation to enhance training datasets and demonstrate significant gains in model performance.
 
@@ -38,7 +38,7 @@ The project includes:
 │   └── chest_xray/                       # Contains NORMAL and PNEUMONIA class images
 ├── Sandbox/                              # Archived/old versions of code used during development
 └── README.md                             # You are here
-
+```
 ---
 
 ## Dataset
