@@ -57,7 +57,7 @@ def apply_gaussian_blur(img):
     img = np.expand_dims(img, axis=-1)  # Add channel dimension: (H, W) -> (H, W, 1)
     return img
 
-def load_dataset_from_dir(data_filepath, img_size=(128, 128), batch_size=16, gaussian_blur=False):
+def load_dataset_from_dir(data_filepath, img_size=(128, 128), batch_size=16, gaussian_blur=False, color_mode='grayscale'):
     '''Load image data from directory, applies optional preprocessing (Gaussian blur), and returns a 
     Keras DirectoryIterator for model training or evaluation.
 
@@ -88,13 +88,13 @@ def load_dataset_from_dir(data_filepath, img_size=(128, 128), batch_size=16, gau
         target_size=img_size,
         batch_size=batch_size,
         class_mode='binary',
-        color_mode='grayscale',
+        color_mode=color_mode,
       )
 
     return dataset
 
 
-def load_dataset_from_df(df, filename_column, label_column, img_size=(128, 128), batch_size=16, gaussian_blur=False):
+def load_dataset_from_df(df, filename_column, label_column, img_size=(128, 128), batch_size=16, gaussian_blur=False, color_mode='grayscale'):
     '''Load image data from a dataframe, applies optional preprocessing (Gaussian blur), and returns a 
     Keras DirectoryIterator for model training or evaluation.
 
@@ -128,7 +128,7 @@ def load_dataset_from_df(df, filename_column, label_column, img_size=(128, 128),
         target_size=img_size,
         batch_size=batch_size,
         class_mode='binary',
-        color_mode='grayscale'
+        color_mode=color_mode
     )
 
     return dataset
@@ -159,4 +159,4 @@ def load_sample_dataframe_from_dir(df, data_filepath, class_label, sample_size, 
     df = pd.concat([df, new_df_sampled], ignore_index=True)
 
     return df
-    
+    fjj
