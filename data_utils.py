@@ -159,4 +159,3 @@ def load_sample_dataframe_from_dir(df, data_filepath, class_label, sample_size, 
     df = pd.concat([df, new_df_sampled], ignore_index=True)
 
     return df
-    fjj
